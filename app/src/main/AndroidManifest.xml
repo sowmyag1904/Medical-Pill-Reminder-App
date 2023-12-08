@@ -10,8 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MedManager">
-        <activity android:name=".AlarmActivity"></activity>
-        <activity android:name=".MedicineActivity" />
+        <activity android:name=".AlarmActivity" android:enabled="true"></activity>
+        <activity android:name=".MedicineActivity" android:enabled="true"/>
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

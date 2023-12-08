@@ -1,5 +1,6 @@
 package com.example.medmanager;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
@@ -19,10 +20,10 @@ import java.util.ArrayList;
 
 public class UserListAdapter extends RecyclerView.Adapter {
     private Cursor user_list;
-    public Context context;
+    public Activity context;
     public MedicalDB helper;
 
-    public UserListAdapter(Context context, MedicalDB helper) {
+    public UserListAdapter(Activity context, MedicalDB helper) {
         this.context = context;
         this.helper = helper;
     }

@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(linearLayoutManager);
 
         //Instantiate object of recycler view by its adapter:
-        userlistAdapter = new UserListAdapter(getApplicationContext(),DbHelper);
+        userlistAdapter = new UserListAdapter(MainActivity.this,DbHelper);
         userlistAdapter.setUserData(DbHelper.getUserList(DbHelper.getWritableDatabase()));
         recyclerView.setAdapter(userlistAdapter);
 
